@@ -7,5 +7,19 @@ int x;
 
 void input()
 {
+    while (true)
+    {
+        cout << "Masukkan banyaknya element pada array (maksimal): ";
+        cin >> nPanjang;
 
+        if (nPanjang <= 10)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\n[!] Jumlah element tidak boleh lebih dari 10, silahkan coba lagi.\n";
+        }
+    }
+    
 }
