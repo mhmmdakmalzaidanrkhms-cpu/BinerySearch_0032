@@ -67,3 +67,21 @@ void display()
     }
     cout << endl;
 }
+
+
+void BinarySeach()
+{
+    char ulang;
+    do 
+     {
+        cout << "\n===============================\n";
+        cout << "     Pencarian Binary Search    \n";
+        cout << "===============================\n";
+     
+        cout << "Masukkan Element yang Ingin Dicari: ";
+        cin >> x; 
+
+        int low = 0;
+        int high = nPanjang - 1;
+
+        
