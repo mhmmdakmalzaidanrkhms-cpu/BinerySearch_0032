@@ -89,4 +89,21 @@ void BinarySeach()
             int mid = (low + high) / 2;   
 
             if (element[mid] == x)
-           
+            {
+                cout << "\n[P] Element " << x << " ditemukan pada index ke-" << mid << ".\n";
+                return;
+            }
+
+            if (element[mid] < x)
+            {
+                high = mid - 1;
+
+            }
+
+            if (x < element[mid])
+            {
+                low = mid + 1;
+            }
+        
+        
+
