@@ -105,5 +105,24 @@ void BinarySeach()
                 low = mid + 1;
             }
         
-        
+        } while (low <= high);
+
+        if (low > high)
+        {
+            cout << "\n[x] Elemen " << x << " tidak ditemukan dalam array.\n";
+        }
+
+        cout << "\nIngin mencari elemen lain? (y/n): ";
+        cin >> ulang;
+
+    } while (ulang == 'y' || ulang == 'Y');       
+}
+
+int main()
+{
+    input();
+    bubblesortArray();
+    display();
+    BinarySeach();
+
 
